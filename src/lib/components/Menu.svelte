@@ -5,6 +5,8 @@
 	import MaterialSymbolsClose from '~icons/material-symbols/close';
 	import { page } from '$app/stores';
 	import LogosWhatsappIcon from '~icons/logos/whatsapp-icon';
+	import { base } from '$app/paths';
+
 	const drawerStore = getDrawerStore();
 	
 	function handleOpen() {
@@ -26,17 +28,17 @@
 		<nav class="list-nav p-4">
 			<ul>
 				<li>
-					<a href="/events/noche-muy-mexicana" class="{classesActive("/events/noche-muy-mexicana")}" on:click={handleClose}>
+					<a href="{base}/events/noche-muy-mexicana" class="{classesActive("/events/noche-muy-mexicana")}" on:click={handleClose}>
 						<h5 class="h5 w-full text-center">🤠 Una Noche Muy Mexicana 🎉</h5>
 					</a>
 				</li>
 				<li>
-					<a href="/events" class="{classesActive("/events")}" on:click={handleClose}>
+					<a href="{base}/events" class="{classesActive("/events")}" on:click={handleClose}>
 						<h5 class="h5 w-full text-center">Más eventos</h5>
 					</a>
 				</li>
 				<li>
-					<a href="/events/noche-muy-mexicana/media" class="{classesActive("/events/noche-muy-mexicana/media")}" on:click={handleClose}>
+					<a href="{base}/events/noche-muy-mexicana/media" class="{classesActive("/events/noche-muy-mexicana/media")}" on:click={handleClose}>
 						<h5 class="h5 w-full text-center">Fotos</h5>
 					</a>
 				</li>
