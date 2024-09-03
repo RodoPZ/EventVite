@@ -27,7 +27,7 @@
         },
 		{
 			title: "Temática",
-			content: "Mexicanos"
+			content: "Mexicana"
 		},
         {
             title: "Costos",
@@ -42,15 +42,28 @@
 	let dataForChips = [
 		{
 			title: "Detalles",
-			content: "<p class='text-justify'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis accusantium accusamus fuga rerum consectetur placeat, cum hic rem, quos excepturi quo, architecto error tenetur eos! Saepe dolor ea mollitia ipsa fuga quia iusto, deleniti deserunt laborum nostrum. Laudantium sed, sunt, architecto magni ipsum, neque autem tenetur inventore fuga porro provident!</p>"
+			content: `<p class='text-justify'>
+				Fiesta con temática mexicana. Única noche del año en que como mexicanos podemos disfrazarnos de mexicanos y actuar como mexicanos, pero de noche.
+				<br><br>
+				Noche para disfrutar un poco las fiestas patrias y tener una excusa para embrigarte.
+				<br><br>
+				Habrá piñatas para romper y un pequeño concurso de disfraces para premiar la creatividad de las personas que deseen irse disfrazadas. Cabe aclarar que el disfraz es totalmente opcional, no es necesario, en caso de irse disfrazado puede ser de cualquier cosa que se les ocurra con temática mexa o preveniente del país, ya sean personajes históricos, estereotipos, memes, personajes ficticios (películas, series, videos) o cualquier cosa que se les ocurra.
+				</p>`
 		},
 		{
 			title: "Reglas",
-			content: "<ul><li>Prohibido el acceso a menores de edad</li></ul>"
+			content: `Los invitados deberán seguir las siguientes reglas dentro del reciento en que se celebrará el evento:<br><br>
+				-Se deberá respetar la infraestructura y lo vienes materiales dentro del recinto. Cualquier acto de vandalismo será castigado con la expulsión del evento.<br><br>
+				-Se deberá respetar al resto de invitados dentro del recinto. Cualquier acto de agresión o violencia contra un individuo será castigado con la expulsión del evento y con el beto del individuo por parte del salón para futuros eventos.<br><br>
+				-Queda prohibido fumar dentro del salón principal. Si desean fumar deberán hacerlo en la parte de abajo, en el jardín.<br><br>
+				-Queda estrictamente prohibido fumar sustancias ilícitas dentro del recinto con pena de expulsión del evento por parte de los elementos de seguridad.<br><br>
+				-El salón y la organización no se hacen responsables por perdida de bienes personales, así que es importante cuidar bien sus pertenecías.<br><br>
+				-El salón deberá ser completamente desalojado en punto de las 2:00 de la madrugada, por lo que se empezará a pedir su salida del lugar a partir de la 1:45. Extreme sus precauciones.
+			`
 		},
 		{
 			title: "Fotos",
-			content: "<p> Al final del evento publicaremos las fotos</p>"
+			content: "<p> Al final del evento publicaremos fotos</p>"
 		}
 	];
 </script>
