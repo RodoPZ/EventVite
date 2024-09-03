@@ -4,6 +4,8 @@
 	import InfoGrid from "$lib/components/InfoGrid.svelte";
 	import LogosWhatsappIcon from '~icons/logos/whatsapp-icon';
 	import MdiExternalLink from '~icons/mdi/external-link';
+	import { base } from '$app/paths';
+
 
 	let dataForGrid = [
         {
@@ -62,7 +64,7 @@
 
 <div>
 	<div class="md:grid md:grid-cols-2 gap-8">
-		<img class="md:hidden" src="/images/una_fiesta_muy_mexicana_baner.jpg" alt="event banner">
+		<img class="md:hidden" src="{base}/images/una_fiesta_muy_mexicana_baner.jpg" alt="event banner">
 		<div class="flex flex-col md:items-center md:justify-center">
 			<h1 class="h2 py-5 text-center">Noche Muy Mexicana</h1>
 			<CountDownClock/>
