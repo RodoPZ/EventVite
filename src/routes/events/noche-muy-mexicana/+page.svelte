@@ -86,8 +86,9 @@
 			<InfoChip title={data.title} content={data.content}/>
 		{/each}
 	</div>
-	<div class="flex justify-center w-full mt-4">
-		<NextParty/>
+	<div class="flex flex-col md:flex-row justify-center w-full mt-3 gap-4">
+		<NextParty name="Spookypeda Vol.3" date="25 de Octubre" src="{base}/images/spookypeda_banner.jpg"/>
+		<NextParty name="Post Halloween Party Vol.3" date="1 de Noviembre" src="{base}/images/posthalloween_banner.jpg"/>
 	</div>
 </div>
 
