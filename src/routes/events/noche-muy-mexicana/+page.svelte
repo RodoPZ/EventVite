@@ -45,7 +45,7 @@
 		},
 		{
 			title: "Fotos",
-			content: "<a class='anchor' href='/'> Al final del evento publicaremos las fotos</a>"
+			content: "<p> Al final del evento publicaremos las fotos</p>"
 		},
 		{
 			title: "Proximamente",
