@@ -27,8 +27,6 @@ jobs:
         run: pnpm install
 
       - name: build
-        env:
-          BASE_PATH: '/EventVite'
         run: |
           pnpm run build
           touch build/.nojekyll
