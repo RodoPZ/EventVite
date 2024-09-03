@@ -71,7 +71,7 @@
 			<hr class="w-full !border-t-2 my-4">
 			<InfoGrid data={dataForGrid}/>
 			<hr class="w-full !border-t-2 my-4">
-			<a class="anchor flex flex-row items-center justify-center gap-4" href="/events/1/media">
+			<a class="anchor flex flex-row items-center justify-center gap-4" href="{base}/events/1/media">
 				<h2 class="h2">Comprar boletos</h2>
 				<LogosWhatsappIcon/>
 			</a>
