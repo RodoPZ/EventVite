@@ -71,7 +71,7 @@
 			<hr class="w-full !border-t-2 my-4">
 			<InfoGrid data={dataForGrid}/>
 			<hr class="w-full !border-t-2 my-4">
-			<a class="anchor flex flex-row items-center justify-center gap-4" href="/">
+			<a class="anchor flex flex-row items-center justify-center gap-4" href="https://chat.whatsapp.com/EA7jHlJYkTPJOo6FRej0BS">
 				<h2 class="h2">Comprar boletos</h2>
 				<LogosWhatsappIcon/>
 			</a>
