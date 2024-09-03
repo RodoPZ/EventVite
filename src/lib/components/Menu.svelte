@@ -15,7 +15,7 @@
 	function handleClose() {
 		drawerStore.close();
 	}
-	$: classesActive = (href: string) => (href === $page.url.pathname ? '!variant-filled-primary' : '');
+	$: classesActive = (href: string) => (`${base}${href}` === $page.url.pathname ? '!variant-filled-primary' : '');
 </script>
 
 <div>
