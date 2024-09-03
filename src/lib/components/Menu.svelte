@@ -46,16 +46,16 @@
 		</nav>
 	</Drawer>
 	<AppBar slotDefault="place-self-center" slotTrail="place-content-end">
-		<svelte:fragment slot="lead"> 
+		<!-- <svelte:fragment slot="lead"> 
 			<button type="button" class="btn-icon btn-icon-sm bg-initial md:hidden" on:click={handleOpen}>
 				<MaterialSymbolsMenu style="font-size: 1.2rem"/>
 			</button>
-		</svelte:fragment>
+		</svelte:fragment> -->
 		<svelte:fragment slot="trail">
-			<button type="button" class="btn hover:variant-soft-primary">
+			<a class="btn hover:variant-soft-primary flex flex-row items-center justify-center gap-4" href="https://chat.whatsapp.com/EA7jHlJYkTPJOo6FRej0BS">
 				<h4 class="h4">Comprar boletos</h4>
 				<LogosWhatsappIcon/>
-			</button>
+			</a>
 		</svelte:fragment>
 	</AppBar>
 </div>

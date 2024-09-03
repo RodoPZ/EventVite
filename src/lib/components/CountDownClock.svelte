@@ -29,7 +29,7 @@
     });
 </script>
 
-<div class="grid grid-cols-4 border border-primary-500 text-primary-500 p-2 min-w-72 place-items-center">
+<div class="grid grid-cols-4 border-2 border-primary-500 text-primary-500 p-2 w-72 place-items-center">
     <h3 class="h3">{days} D :</h3>
     <h3 class="h3">{hours} h :</h3>
     <h3 class="h3">{minutes} m :</h3>

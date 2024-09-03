@@ -5,6 +5,7 @@
 	import LogosWhatsappIcon from '~icons/logos/whatsapp-icon';
 	import MdiExternalLink from '~icons/mdi/external-link';
 	import { base } from '$app/paths';
+	import NextParty from "$lib/components/NextParty.svelte";
 
 
 	let dataForGrid = [
@@ -24,12 +25,16 @@
             title: "Hora",
             content: "09:00 PM"
         },
+		{
+			title: "Temática",
+			content: "Mexicanos"
+		},
         {
             title: "Costos",
             content: [
-                '<p class="line-through text-surface-500 ">Fase 1: $60</p>',
-                "Fase 2: $80",
-                "Día del evento: $100"
+                '<p class="text-surface-400 line-through">Fase 1: $60</p>',
+                '<p >Fase 2: $80</p>',
+                '<p class="text-surface-400 line-through">Día del evento: $100</p>'
             ]
         }
     ];
@@ -46,18 +51,6 @@
 		{
 			title: "Fotos",
 			content: "<p> Al final del evento publicaremos las fotos</p>"
-		},
-		{
-			title: "Proximamente",
-			content: `
-				<div class='w-full flex justify-center items-center'>
-					<img style='width: 100px' src='https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673-960x960.png' alt='Next event'>
-					<div class="flex flex-col gap-2 ml-4">
-						<h4>Spookypeda</h4>
-						<p>13 de Septiembre</p>
-					</div>
-				</div>
-			`		
 		}
 	];
 </script>
@@ -65,9 +58,11 @@
 <div>
 	<div class="md:grid md:grid-cols-2 gap-8">
 		<img class="md:hidden" src="{base}/images/una_fiesta_muy_mexicana_baner.jpg" alt="event banner">
-		<div class="flex flex-col md:items-center md:justify-center">
-			<h1 class="h2 py-5 text-center">Noche Muy Mexicana</h1>
-			<CountDownClock/>
+		<div class="flex flex-col md:items-center md:justify-center gap-4">
+			<h1 class="h1 py-5 text-center">Noche Muy Mexicana</h1>
+			<div class="flex justify-center">
+				<CountDownClock/>
+			</div>
 			<hr class="w-full !border-t-2 my-4">
 			<InfoGrid data={dataForGrid}/>
 			<hr class="w-full !border-t-2 my-4">
@@ -76,7 +71,12 @@
 				<LogosWhatsappIcon/>
 			</a>
 		</div>
-		<img class="hidden md:block md:grid-ri max-w-[604px]" alt="event banner">
+		<div class="hidden md:flex md:justify-center md:items-center">
+			<img class="md:block w-full max-w-[500px] h-[600px] bg-surface-400 object-cover object-top" 
+				src="{base}/images/una_fiesta_muy_mexicana_baner.jpg"  
+				alt="event banner"
+			>
+		</div>
 	</div>
 
 	<div class="flex w-full h-full flex-col items-center justify-center p-2 gap-3">
@@ -85,6 +85,9 @@
 		{#each dataForChips as data}
 			<InfoChip title={data.title} content={data.content}/>
 		{/each}
+	</div>
+	<div class="flex justify-center w-full mt-4">
+		<NextParty/>
 	</div>
 </div>
 
